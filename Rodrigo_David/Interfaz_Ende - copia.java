@@ -39,7 +39,7 @@ public class Interfaz_Ende {
 
     private void initialize() {
         frmRodrigosuma = new JFrame();
-        frmRodrigosuma.setTitle("Divisor");
+        frmRodrigosuma.setTitle("Rodrigo-Divisor");
         frmRodrigosuma.setResizable(false);
         frmRodrigosuma.setBounds(100, 100, 450, 275);
         frmRodrigosuma.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
