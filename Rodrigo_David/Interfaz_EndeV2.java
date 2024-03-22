@@ -74,16 +74,16 @@ public class Interfaz_Ende {
 
                     lblSalida.setText(String.format("%.2f / %.2f = %.2f", n1, n2, division));
                 } catch (NumberFormatException ex) {
-                    lblSalida.setText("Error: Ingresa números válidos");
+                    lblSalida.setText("Error: Está usted ingresando números no permitidos");
                 } catch (ArithmeticException ex) {
-                    lblSalida.setText("Error: No se puede dividir por cero");
+                    lblSalida.setText("Error: No es posible dividir por cero");
                 }
             }
         });
         botonDividir.setBounds(10, 134, 89, 23);
         frmRodrigosuma.getContentPane().add(botonDividir);
 
-        JButton botonLimpiar = new JButton("Limpiar");
+        JButton botonLimpiar = new JButton("Borrar");
         botonLimpiar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtN1.setText("");
