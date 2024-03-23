@@ -1,5 +1,5 @@
 package Rodrigo_David;
-
+//IMPORTS
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -20,6 +20,7 @@ public class Interfaz_Ende {
     private JTextField txtN2;
     private JLabel lblSalida;
 
+//MAIN OF THE PROGRAM - INITIALIZATION OF WINDOW FRAME
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -37,6 +38,7 @@ public class Interfaz_Ende {
         initialize();
     }
 
+//INITIALIZING PARTS/OBJETS OF THE WINDOWS, ADDING TEXTS, COORDS AND AJUSTS.
     private void initialize() {
         frmRodrigosuma = new JFrame();
         frmRodrigosuma.setTitle("Rodrigo-Divisor");
@@ -65,6 +67,8 @@ public class Interfaz_Ende {
 
         JButton botonDividir = new JButton("Dividir");
         botonDividir.addActionListener(new ActionListener() {
+
+//ACTION OF PRESSING DIVIDIR BUTTOM WHERE IT DIVIDES TXTN1 INTO TXTN2
             public void actionPerformed(ActionEvent e) {
                 try {
                     double n1 = Double.parseDouble(txtN1.getText());
@@ -82,7 +86,7 @@ public class Interfaz_Ende {
         });
         botonDividir.setBounds(10, 134, 89, 23);
         frmRodrigosuma.getContentPane().add(botonDividir);
-
+//ACTION OF PRESSING BORRAR BUTTOM WHERE IT SET THE TEXT INTO " "
         JButton botonLimpiar = new JButton("Borrar");
         botonLimpiar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
