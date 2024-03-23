@@ -83,7 +83,7 @@ public class Interfaz_Ende {
         botonDividir.setBounds(10, 134, 89, 23);
         frmRodrigosuma.getContentPane().add(botonDividir);
 
-        JButton botonLimpiar = new JButton("Limpiar");
+        JButton botonLimpiar = new JButton("Eliminar");
         botonLimpiar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 txtN1.setText("");
